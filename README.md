@@ -6,11 +6,11 @@ A local Streamlit app for extracting information from document images and PDFs. 
 
 The short project walkthrough is in [`demo/document_intelligence_demo.mp4`](demo/document_intelligence_demo.mp4).
 
-| App screenshot | Example input |
+| App result | Input used for this result |
 | --- | --- |
-| ![Extracted fields in the app](screenshots/01-extracted-fields.png) | ![Synthetic operations report](samples/complex_operations_report.png) |
+| ![Extracted invoice fields in the app](screenshots/01-extracted-fields.png) | ![The synthetic invoice uploaded to the app](samples/invoice.png) |
 
-The example report is synthetic and contains no real organization or personal data.
+The invoice and operations report samples are synthetic and contain no real organization or personal data.
 
 More screenshots: [detected OCR regions](screenshots/02-detected-regions.png) and [structured JSON output](screenshots/03-structured-json.png).
 

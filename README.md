@@ -1,6 +1,6 @@
 # Multimodal Document Intelligence
 
-A local Streamlit app for extracting information from document images and PDFs. It combines a YOLO document-layout detector, pretrained Tesseract OCR, conservative field-extraction rules, schema validation, and evidence-based question answering. Documents are processed locally; this project does not call an LLM or send uploads to a hosted service.
+A local Streamlit app for extracting information from document images and PDFs. It combines a YOLO document-layout detector, pretrained Tesseract OCR, conservative field-extraction rules, schema validation, and evidence-based question answering. Uploaded documents are processed locally using the models and OCR engine installed on your computer.
 
 ## Demo
 
@@ -77,9 +77,9 @@ Evaluation on generated documents is a functional check, not a representative re
 2. The included YOLO model predicts general document-layout regions. It was trained for document layout and was not fine-tuned here for invoices or receipts.
 3. The app OCRs regions and the full page with Tesseract using the measured preprocessing configuration (2× upscale, 10 px margin, page segmentation mode 6), then selects/merges text for extraction.
 4. Rule-based extraction produces field values with OCR evidence. Pydantic checks the output schema and marks missing or ambiguous required fields for review.
-5. Question answering uses extracted values and OCR text/section evidence. It is retrieval and matching, not open-ended LLM reasoning.
+5. Question answering uses extracted values and OCR text/section evidence to retrieve grounded answers.
 
-No OCR engine is trained or fine-tuned in this repository. Tesseract and the YOLO detector run locally. The YOLO checkpoint is included at `best_model/doclaynet_yolov8s_baseline.pt` so the app can run without downloading project weights.
+The current Q&A and field extraction are rule-based; they use evidence found in the document. Tesseract and the YOLO detector run locally. The YOLO checkpoint is included at `best_model/doclaynet_yolov8s_baseline.pt` so the app can run without downloading project weights.
 
 ## Repository contents
 
@@ -106,6 +106,14 @@ The two notebooks are experiment records, not required to run the app. The YOLO 
 - OCR confidence is not calibrated as field confidence, so the structured output leaves confidence unavailable (`null`).
 - The Q&A feature retrieves matching fields and section text. It does not provide general reasoning or reliably answer questions that require combining facts across distant parts of a document.
 - Synthetic examples are clean and may overstate performance on real documents. Evaluate with representative, appropriately licensed documents before deployment.
+
+## Future work
+
+- Evaluate an optional LLM-backed extraction and question-answering mode for varied wording and questions that need information combined across a document. Keep the current evidence-based pipeline as a baseline, require schema validation, and compare both approaches on the same labeled documents. Any hosted model option should clearly explain where document data is sent; a local model could be evaluated for privacy-sensitive use.
+- Improve layout detection for invoices, receipts, and forms by collecting appropriately licensed, representative annotations and training or fine-tuning a document-specific YOLO model. Compare the current general layout checkpoint against the specialized model on a held-out set.
+- Benchmark OCR engines and preprocessing settings on a larger labeled set, including difficult crops and document languages. Consider replacing or fine-tuning the OCR engine only if repeated errors show a clear benefit; report character and word error rates by document type.
+- Add table-structure recognition and more reliable multi-column reading order so line items and their descriptions remain associated.
+- Expand evaluation with diverse public or carefully permissioned documents, and track field-level accuracy, missing-versus-wrong values, review-flag recall, and processing time.
 
 ## License
 

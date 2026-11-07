@@ -1,0 +1,182 @@
+[
+  {
+    "file": "samples/evaluation/invoice_01.png",
+    "document_type": "invoice",
+    "supplier_name": "Northstar Supply",
+    "customer_name": "Example Studio",
+    "date": "2026-10-31",
+    "amount": "$1,248.50",
+    "status": "unpaid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_02.png",
+    "document_type": "invoice",
+    "supplier_name": "Acme Paper Co",
+    "customer_name": "Bluebird Office",
+    "date": "2026-05-14",
+    "amount": "$235.00",
+    "status": "paid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_03.png",
+    "document_type": "invoice",
+    "supplier_name": "Cedar Works",
+    "customer_name": "Mason Design",
+    "date": "2026-02-19",
+    "amount": "$89.95",
+    "status": "pending",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_04.png",
+    "document_type": "invoice",
+    "supplier_name": "Harbor Tools",
+    "customer_name": "Weston Build",
+    "date": "2026-09-08",
+    "amount": "$3,405.20",
+    "status": "unpaid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_05.png",
+    "document_type": "invoice",
+    "supplier_name": "Maple Print Shop",
+    "customer_name": "Red Kite Media",
+    "date": "2026-12-01",
+    "amount": "$610.00",
+    "status": "paid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/receipt_06.png",
+    "document_type": "receipt",
+    "supplier_name": "Green Market",
+    "customer_name": null,
+    "date": "2026-08-17",
+    "amount": "$42.18",
+    "status": "paid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "missing",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/receipt_07.png",
+    "document_type": "receipt",
+    "supplier_name": "Corner Cafe",
+    "customer_name": null,
+    "date": "2026-07-03",
+    "amount": "$18.50",
+    "status": "paid",
+    "scenario": "normal",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "missing",
+      "date": "extracted",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_08_missing_total.png",
+    "document_type": "invoice",
+    "supplier_name": "Acme Paper Co",
+    "customer_name": "Bluebird Office",
+    "date": "2026-05-14",
+    "amount": null,
+    "status": "unpaid",
+    "scenario": "missing_total",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "extracted",
+      "amount": "missing",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/invoice_09_ambiguous_date.png",
+    "document_type": "invoice",
+    "supplier_name": "Cedar Works",
+    "customer_name": "Mason Design",
+    "date": "03/04/2026",
+    "amount": "$89.95",
+    "status": "pending",
+    "scenario": "ambiguous_date",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "extracted",
+      "date": "uncertain",
+      "amount": "extracted",
+      "status": "extracted"
+    }
+  },
+  {
+    "file": "samples/evaluation/receipt_10_conflicting_totals.png",
+    "document_type": "receipt",
+    "supplier_name": "Corner Cafe",
+    "customer_name": null,
+    "date": "2026-07-03",
+    "amount": null,
+    "status": "paid",
+    "scenario": "conflicting_totals",
+    "expected_statuses": {
+      "document_type": "extracted",
+      "supplier_name": "extracted",
+      "customer_name": "missing",
+      "date": "extracted",
+      "amount": "uncertain",
+      "status": "extracted"
+    }
+  }
+]

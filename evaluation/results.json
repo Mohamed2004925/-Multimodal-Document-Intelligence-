@@ -1,0 +1,158 @@
+{
+  "fixture_count": 10,
+  "synthetic_only": true,
+  "sources": {
+    "full_page": {
+      "fields": {
+        "document_type": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "supplier_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "customer_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "date": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "amount": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "status": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        }
+      },
+      "document_type_accuracy": 1.0,
+      "needs_review_recall": null,
+      "documents_with_any_wrong_or_missing_field": 0
+    },
+    "layout_crop": {
+      "fields": {
+        "document_type": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "supplier_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "customer_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "date": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "amount": {
+          "correct": 5,
+          "wrong": 0,
+          "missing": 5,
+          "status_correct": 5,
+          "status_wrong": 5
+        },
+        "status": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        }
+      },
+      "document_type_accuracy": 1.0,
+      "needs_review_recall": 1.0,
+      "documents_with_any_wrong_or_missing_field": 5
+    },
+    "merged": {
+      "fields": {
+        "document_type": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "supplier_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "customer_name": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "date": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "amount": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        },
+        "status": {
+          "correct": 10,
+          "wrong": 0,
+          "missing": 0,
+          "status_correct": 10,
+          "status_wrong": 0
+        }
+      },
+      "document_type_accuracy": 1.0,
+      "needs_review_recall": null,
+      "documents_with_any_wrong_or_missing_field": 0
+    }
+  },
+  "selected_text_source_counts": {
+    "full_page": 7,
+    "merged": 3,
+    "mixed": 0
+  }
+}

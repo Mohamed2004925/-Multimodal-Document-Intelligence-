@@ -1,0 +1,280 @@
+{
+  "source_file": "synthetic_ocr_validation_fixture",
+  "fields": {
+    "document_type": {
+      "value": "invoice",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": null
+    },
+    "name": {
+      "value": "Example Supplier",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "Supplier: Example Supplier"
+    },
+    "supplier_name": {
+      "value": "Example Supplier",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "Supplier: Example Supplier"
+    },
+    "customer_name": {
+      "value": null,
+      "extraction_status": "missing",
+      "confidence": null,
+      "evidence": null
+    },
+    "date": {
+      "value": "03/04/2026",
+      "extraction_status": "uncertain",
+      "confidence": null,
+      "evidence": "Invoice Date: 03/04/2026"
+    },
+    "amount": {
+      "value": null,
+      "extraction_status": "missing",
+      "confidence": null,
+      "evidence": null
+    },
+    "status": {
+      "value": null,
+      "extraction_status": "missing",
+      "confidence": null,
+      "evidence": null
+    }
+  },
+  "required_fields": [
+    "document_type",
+    "supplier_name",
+    "date",
+    "amount"
+  ],
+  "needs_review": true,
+  "ocr_engine": "Tesseract",
+  "text_source": "full_page",
+  "full_text": "Invoice\nSupplier: Example Supplier\nInvoice Date: 03/04/2026\n",
+  "preprocessing": {
+    "upscale": 1,
+    "white_margin_px": 10,
+    "psm": 6
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "regions": [
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.2551,
+          "bbox_xyxy": [
+            849,
+            70,
+            1076,
+            125
+          ],
+          "text": "INVOICE"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.6276,
+          "bbox_xyxy": [
+            81,
+            123,
+            495,
+            149
+          ],
+          "text": "42 Market Street, Boston, MA 02110"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.313,
+          "bbox_xyxy": [
+            80,
+            296,
+            280,
+            369
+          ],
+          "text": "INVOICE NO.\nNS-2026-1042"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3724,
+          "bbox_xyxy": [
+            628,
+            302,
+            775,
+            324
+          ],
+          "text": "INVOICE DATE"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4119,
+          "bbox_xyxy": [
+            79,
+            303,
+            207,
+            324
+          ],
+          "text": "INVOICE NO."
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.3887,
+          "bbox_xyxy": [
+            83,
+            339,
+            279,
+            368
+          ],
+          "text": "NS-2026-1042"
+        },
+        {
+          "layout_label": "Table",
+          "layout_confidence": 0.3528,
+          "bbox_xyxy": [
+            87,
+            433,
+            1122,
+            660
+          ],
+          "text": "Supplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.266,
+          "bbox_xyxy": [
+            111,
+            463,
+            509,
+            488
+          ],
+          "text": "Supplier: Northstar Office Supply"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.6242,
+          "bbox_xyxy": [
+            111,
+            499,
+            474,
+            520
+          ],
+          "text": "42 Market Street, Boston, MA 02110"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.6963,
+          "bbox_xyxy": [
+            114,
+            548,
+            530,
+            573
+          ],
+          "text": "Customer: Example Design Studio"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.6323,
+          "bbox_xyxy": [
+            111,
+            581,
+            484,
+            605
+          ],
+          "text": "18 River Road, Cambridge, MA 02139"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3959,
+          "bbox_xyxy": [
+            109,
+            740,
+            261,
+            763
+          ],
+          "text": "DESCRIPTION}"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4013,
+          "bbox_xyxy": [
+            111,
+            827,
+            381,
+            856
+          ],
+          "text": "Printer paper, 10 reams"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3947,
+          "bbox_xyxy": [
+            711,
+            1107,
+            975,
+            1142
+          ],
+          "text": "TOTAL: $1,248.50"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4555,
+          "bbox_xyxy": [
+            81,
+            1313,
+            462,
+            1336
+          ],
+          "text": "Please remit payment within 30 days."
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.546,
+          "bbox_xyxy": [
+            79,
+            1482,
+            479,
+            1502
+          ],
+          "text": "SYNTHETIC SAMPLE — NOT A REAL INVOICE"
+        }
+      ],
+      "full_text": "NORTHSTAR OFFICE SUPPLY TNAV{e) (e =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+      "text_source": "full_page",
+      "ocr_text_variants": {
+        "full_page": "NORTHSTAR OFFICE SUPPLY TNAV{e) (e =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+        "layout_crop": "INVOICE\n42 Market Street, Boston, MA 02110\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nINVOICE NO.\nNS-2026-1042\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nDESCRIPTION}\nPrinter paper, 10 reams\nTOTAL: $1,248.50\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+        "merged": "NORTHSTAR OFFICE SUPPLY TNAV{e) (e =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE\nINVOICE\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nDESCRIPTION}\nPrinter paper, 10 reams"
+      }
+    }
+  ],
+  "question_answers": [
+    {
+      "question": "What is the invoice date?",
+      "answer": null,
+      "status": "uncertain",
+      "evidence": "Invoice Date: 03/04/2026",
+      "message": "The document contains conflicting or ambiguous evidence."
+    },
+    {
+      "question": "What is the total amount?",
+      "answer": null,
+      "status": "not_found",
+      "evidence": null,
+      "message": "I could not find this field in the recognized document text."
+    },
+    {
+      "question": "When is the payment due?",
+      "answer": null,
+      "status": "not_found",
+      "evidence": null,
+      "message": "Payment dates are not extracted as a separate field by this prototype."
+    }
+  ],
+  "ocr_text_variants": {
+    "full_page": "NORTHSTAR OFFICE SUPPLY TNAV{e) (e =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+    "layout_crop": "INVOICE\n42 Market Street, Boston, MA 02110\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nINVOICE NO.\nNS-2026-1042\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nDESCRIPTION}\nPrinter paper, 10 reams\nTOTAL: $1,248.50\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+    "merged": "NORTHSTAR OFFICE SUPPLY TNAV{e) (e =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE\nINVOICE\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nDESCRIPTION}\nPrinter paper, 10 reams"
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "source_file": "sample_invoice.pdf",
+  "fields": {
+    "document_type": {
+      "value": "invoice",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": null
+    },
+    "name": {
+      "value": null,
+      "extraction_status": "uncertain",
+      "confidence": null,
+      "evidence": "Supplier: Northstar Office Supply; Customer: Example Design Studio"
+    },
+    "supplier_name": {
+      "value": "Northstar Office Supply",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "Supplier: Northstar Office Supply"
+    },
+    "customer_name": {
+      "value": "Example Design Studio",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "Customer: Example Design Studio"
+    },
+    "date": {
+      "value": "2026-10-31",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "NS-2026-1042 October 31, 2026"
+    },
+    "amount": {
+      "value": "$1,248.50",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "TOTAL: $1,248.50"
+    },
+    "status": {
+      "value": "unpaid",
+      "extraction_status": "extracted",
+      "confidence": null,
+      "evidence": "PAYMENT STATUS: UNPAID"
+    }
+  },
+  "required_fields": [
+    "document_type",
+    "supplier_name",
+    "date",
+    "amount"
+  ],
+  "needs_review": false,
+  "ocr_engine": "Tesseract",
+  "text_source": "full_page",
+  "full_text": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+  "preprocessing": {
+    "dpi": 150,
+    "white_margin_px": 10,
+    "psm": 6
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "regions": [
+        {
+          "layout_label": "Title",
+          "layout_confidence": 0.4791,
+          "bbox_xyxy": [
+            92,
+            65,
+            668,
+            108
+          ],
+          "text": "ORTHSTAR OFFICE SUPPLY"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.3639,
+          "bbox_xyxy": [
+            902,
+            74,
+            1139,
+            134
+          ],
+          "text": "INVOICE"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.7337,
+          "bbox_xyxy": [
+            83,
+            132,
+            523,
+            157
+          ],
+          "text": "42 Market Street, Boston, MA 02110"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.5292,
+          "bbox_xyxy": [
+            84,
+            321,
+            298,
+            394
+          ],
+          "text": "INVOICE NO.\nNS-2026-1042"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4615,
+          "bbox_xyxy": [
+            667,
+            322,
+            822,
+            343
+          ],
+          "text": "INVOICE DATE"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.3833,
+          "bbox_xyxy": [
+            83,
+            357,
+            301,
+            394
+          ],
+          "text": "NS-2026-1042"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.3154,
+          "bbox_xyxy": [
+            668,
+            357,
+            930,
+            394
+          ],
+          "text": "October 31, 2026"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4383,
+          "bbox_xyxy": [
+            122,
+            529,
+            502,
+            553
+          ],
+          "text": "42 Market Street, Boston, MA 02110"
+        },
+        {
+          "layout_label": "Section-header",
+          "layout_confidence": 0.4285,
+          "bbox_xyxy": [
+            121,
+            580,
+            559,
+            611
+          ],
+          "text": "Customer: Example Design Studio"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3471,
+          "bbox_xyxy": [
+            121,
+            589,
+            535,
+            644
+          ],
+          "text": "Customer: Example vesign stud)\n18 River Road, Cambridge, MA 02139"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3715,
+          "bbox_xyxy": [
+            121,
+            606,
+            537,
+            644
+          ],
+          "text": "48 River Road, Cambridge, MA 02139"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3263,
+          "bbox_xyxy": [
+            126,
+            619,
+            519,
+            643
+          ],
+          "text": "18 River Road, Cambridge, MA 02139"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3253,
+          "bbox_xyxy": [
+            117,
+            785,
+            279,
+            811
+          ],
+          "text": "IDESCRIPTION"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3252,
+          "bbox_xyxy": [
+            116,
+            877,
+            404,
+            909
+          ],
+          "text": "Printer paper, 10 reams"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.4681,
+          "bbox_xyxy": [
+            764,
+            1020,
+            860,
+            1049
+          ],
+          "text": "Subtotal"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.309,
+          "bbox_xyxy": [
+            1021,
+            1021,
+            1138,
+            1107
+          ],
+          "text": "$1,150.00\n$98.50"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.422,
+          "bbox_xyxy": [
+            1020,
+            1022,
+            1134,
+            1049
+          ],
+          "text": "$1,150.00"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.5628,
+          "bbox_xyxy": [
+            764,
+            1080,
+            810,
+            1107
+          ],
+          "text": "Tax"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3826,
+          "bbox_xyxy": [
+            1020,
+            1080,
+            1098,
+            1107
+          ],
+          "text": "$98.50"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.2604,
+          "bbox_xyxy": [
+            755,
+            1175,
+            1038,
+            1213
+          ],
+          "text": "TOTAL: $1,248.50"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.2923,
+          "bbox_xyxy": [
+            84,
+            1329,
+            487,
+            1362
+          ],
+          "text": "PAYMENT STATUS: UNPAID"
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3076,
+          "bbox_xyxy": [
+            84,
+            1332,
+            493,
+            1422
+          ],
+          "text": "PAYMENT STATUS: UNPAID\nPlease remit payment within 30 days."
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.3009,
+          "bbox_xyxy": [
+            99,
+            1393,
+            494,
+            1420
+          ],
+          "text": "‘lease remit payment within 30 days."
+        },
+        {
+          "layout_label": "Text",
+          "layout_confidence": 0.7808,
+          "bbox_xyxy": [
+            85,
+            1574,
+            510,
+            1596
+          ],
+          "text": "SYNTHETIC SAMPLE — NOT A REAL INVOICE"
+        }
+      ],
+      "full_text": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+      "text_source": "full_page",
+      "ocr_text_variants": {
+        "full_page": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+        "layout_crop": "ORTHSTAR OFFICE SUPPLY\nINVOICE\n42 Market Street, Boston, MA 02110\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nNS-2026-1042\nOctober 31, 2026\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\nCustomer: Example vesign stud)\n18 River Road, Cambridge, MA 02139\n48 River Road, Cambridge, MA 02139\n18 River Road, Cambridge, MA 02139\nIDESCRIPTION\nPrinter paper, 10 reams\nSubtotal\n$1,150.00\n$98.50\n$1,150.00\nTax\n$98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\n‘lease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+        "merged": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE\nORTHSTAR OFFICE SUPPLY\nINVOICE\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nOctober 31, 2026\nIDESCRIPTION\nPrinter paper, 10 reams\nSubtotal\n$1,150.00\n$98.50\nTax"
+      }
+    }
+  ],
+  "question_answers": [
+    {
+      "question": "Who is the supplier?",
+      "answer": "Northstar Office Supply",
+      "status": "answered",
+      "evidence": "Supplier: Northstar Office Supply",
+      "message": null
+    },
+    {
+      "question": "What is the total amount?",
+      "answer": "$1,248.50",
+      "status": "answered",
+      "evidence": "TOTAL: $1,248.50",
+      "message": null
+    }
+  ],
+  "ocr_text_variants": {
+    "full_page": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+    "layout_crop": "ORTHSTAR OFFICE SUPPLY\nINVOICE\n42 Market Street, Boston, MA 02110\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nNS-2026-1042\nOctober 31, 2026\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\nCustomer: Example vesign stud)\n18 River Road, Cambridge, MA 02139\n48 River Road, Cambridge, MA 02139\n18 River Road, Cambridge, MA 02139\nIDESCRIPTION\nPrinter paper, 10 reams\nSubtotal\n$1,150.00\n$98.50\n$1,150.00\nTax\n$98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\n‘lease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE",
+    "merged": "NORTHSTAR OFFICE SUPPLY TNAV{@) (eq =\n42 Market Street, Boston, MA 02110\nINVOICE NO. INVOICE DATE\nNS-2026-1042 October 31, 2026\nSupplier: Northstar Office Supply\n42 Market Street, Boston, MA 02110\nCustomer: Example Design Studio\n18 River Road, Cambridge, MA 02139\nPrinter paper, 10 reams 10 $1,248.50\nSubtotal $1,150.00\nTax $98.50\nTOTAL: $1,248.50\nPAYMENT STATUS: UNPAID\nPlease remit payment within 30 days.\nSYNTHETIC SAMPLE — NOT A REAL INVOICE\nORTHSTAR OFFICE SUPPLY\nINVOICE\nINVOICE NO.\nNS-2026-1042\nINVOICE DATE\nOctober 31, 2026\nIDESCRIPTION\nPrinter paper, 10 reams\nSubtotal\n$1,150.00\n$98.50\nTax"
+  }
+}

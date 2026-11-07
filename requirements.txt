@@ -1,0 +1,6 @@
+ultralytics
+opencv-python
+pytesseract
+pymupdf
+streamlit
+pydantic>=2,<3

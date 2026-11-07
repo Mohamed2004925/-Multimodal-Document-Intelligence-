@@ -1,0 +1,25 @@
+# Local Python environments and caches
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# IDE and notebook runtime data
+.vscode/
+.ipynb_checkpoints/
+
+# Training/checkpoint workspace and generated scratch artifacts
+last/
+*.tmp
+*.log
+
+# Local secrets and OS metadata
+.env
+.env.*
+!.env.example
+Thumbs.db
+.DS_Store

@@ -4,7 +4,7 @@ A local Streamlit app for extracting information from document images and PDFs. 
 
 ## Demo
 
-The short project walkthrough is in [`demo/document_intelligence_demo.mp4`](demo/document_intelligence_demo.mp4).
+The short project walkthrough is in [`demo/document_intelligence_demo.mp4`](https://youtu.be/M_28ph1kPBA).
 
 | App result | Input used for this result |
 | --- | --- |

@@ -26,8 +26,11 @@ with st.sidebar:
     st.header("Processing settings")
     weights_path = st.text_input("YOLO model weights", value=str(pipeline.DEFAULT_WEIGHTS))
     confidence = st.slider("Detection confidence", min_value=0.05, max_value=0.95, value=0.25, step=0.05)
+    st.caption("Lower it to find more regions; raise it if you see too many irrelevant boxes.")
     image_size = st.selectbox("Model image size", options=[640, 1024], index=0)
+    st.caption("Try 1024 if small regions are missed. Keep 640 for faster processing.")
     pdf_dpi = st.slider("PDF rendering resolution (DPI)", min_value=100, max_value=300, value=150, step=25)
+    st.caption("Increase it if a scanned PDF looks blurry; lower it if processing is slow. Images are unaffected.")
 
 uploaded_file = st.file_uploader(
     "Choose an image or PDF",
